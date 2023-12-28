@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS50 Search</title>
+
+        <link rel="stylesheet" href="asset/style.css">
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a class="navlinks" href="images.html">Images</a>
+            <a class="navlinks" href="advance.html">Advanced Search</a>
+
+            <img class="avatar" src="asset/avatar.png"> 
+
+        </div>
+        <div class="logosmall"> 
+            <a href="index.html"><img src="asset/logo_sm.png"></a>
+        </div>
+
+        <div id="imagescontent">
+            <img class="logo" src="asset/imageslogo.png"> 
+            <form action="https://google.com/search">
+                
+                <div style="min-height: 70px;">
+                    <img class="searchimg" src="asset/search.png">
+                    <input class="searchbar" type="text" name="q" autocomplete="off">
+                    <input class="searchbar" type="hidden" value="isch" name="tbm">
+                    <img class="searchimagebutton" src="asset/search_blue.png" onClick="document.getElementById('imgButton').click();">
+                </div>
+
+                <input id="imgButton" type="submit" hidden>
+            </form>
+        </div>
+
+        
+    </body>
+</html>

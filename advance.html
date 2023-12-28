@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS50 Search</title>
+
+        <link rel="stylesheet" href="asset/style.css">
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a class="navlinks" href="images.html">Images</a>
+            <a class="navlinks" href="advance.html">Advanced Search</a>
+
+            <img class="avatar" src="asset/avatar.png"> 
+
+        </div>
+
+        <div class="logosmall"> 
+            <a href="index.html"><img src="asset/logo_sm.png"></a>
+        </div>
+
+        <div class="adbar"> 
+            <label style="margin-left:10px"> Advanced Search</label>    
+            <div class="hr"></div>
+        </div>
+        <span class="find">Find pages with...</span>
+
+        
+        <div id="advancecontent">
+            <form action="https://google.com/search">
+                
+                <table style="width:100%; text-align: left;">
+                    <tr>
+                      <td class="tdfirst">all these words:</td>
+                      <td class="tdsecond"><input autofocus="autofocus" class="advanceinput" name="as_q" type="text" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdfirst">this exact word or phrase:</td>
+                        <td class="tdsecond"> <input class="advanceinput" name="as_epq" type="text" autocomplete="off"></td>
+                      </tr>
+                      <tr>
+                        <td class="tdfirst">any of these words:</td>
+                        <td class="tdsecond"><input name="as_oq" class="advanceinput" type="text" autocomplete="off"></td>
+                      </tr>
+                      <tr>
+                        <td class="tdfirst">none of these words:</td>
+                        <td class="tdsecond"><input name="as_eq" class="advanceinput" type="text" autocomplete="off"></td>
+                      </tr>
+                  </table>
+                  <div style="text-align: right;">
+                    <input class="advancebutton" type="submit" value="Advanced Search">
+
+                  </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
